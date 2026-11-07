@@ -6,16 +6,53 @@
     <title>Contact Us</title>
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            background: #0f172a;
-            color: white;
+            background: #101010;
+            color: #eeeeee;
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 30px;
+            padding: 20px;
+        }
+
+        nav {
+            background: #080808;
+            padding: 16px;
+            text-align: center;
+            border-bottom: 1px solid #333;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: #ddd;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #e63946;
         }
 
         h1 {
-            color: #a78bfa;
+            color: #e63946;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            font-size: 36px;
+        }
+
+        .subtitle {
+            color: #aaa;
+            margin-bottom: 25px;
         }
 
         .contacts {
@@ -23,63 +60,179 @@
             justify-content: center;
             flex-wrap: wrap;
             gap: 25px;
-            margin: 35px;
+            margin: 35px 0;
         }
 
         .card {
-            background: #1e293b;
+            background: #1b1b1b;
             padding: 25px;
-            border-radius: 15px;
-            width: 260px;
+            border-radius: 10px;
+            width: 300px;
+            border: 1px solid #333;
+            border-top: 4px solid #8b0000;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #e63946;
         }
 
         .card img {
             width: 180px;
-            height: 130px;
+            height: 180px;
             object-fit: cover;
             border-radius: 10px;
+            margin-bottom: 15px;
+            border: 2px solid #8b0000;
+        }
+
+        .card h2 {
+            color: #e63946;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #ccc;
+            margin: 12px 0;
+            line-height: 1.5;
+            font-size: 14px;
         }
 
         a {
-            color: #93c5fd;
+            color: #ff6b75;
             text-decoration: none;
+            transition: 0.3s;
         }
 
         a:hover {
-            color: #c4b5fd;
+            color: white;
+            text-decoration: underline;
+        }
+
+        .message {
+            color: #aaa;
+            margin: 15px 0;
+        }
+
+        footer {
+            margin-top: 35px;
+            padding: 25px;
+            background: #181818;
+            border-top: 3px solid #8b0000;
+            color: #777;
+            font-size: 13px;
+        }
+
+        footer strong {
+            color: #e63946;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 7px 10px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 350px;
+            }
         }
     </style>
 </head>
 
 <body>
 
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="profile.html">Profile</a> |
+        <a href="skills.html">Skills</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+
     <h1>Contact the Duo 🦈</h1>
-    <p>Two developers. One brain cell. Surprisingly, a working website.</p>
+
+    <p class="subtitle">
+        Two developers. One brain cell. Surprisingly, a working website.
+    </p>
 
     <div class="contacts">
 
         <div class="card">
-            <img src="https://i.pinimg.com/1200x/40/70/3c/40703ce586260641a08ddd613445b3e4.jpg" alt="Blahaj">
+
+            <img src="https://i.pinimg.com/1200x/40/70/3c/40703ce586260641a08ddd613445b3e4.jpg"
+                 alt="Blahaj">
+
             <h2>Krishna Vidhyarthi</h2>
+
             <p>Team Lead | Professional bug creator</p>
-            <p>Email: <a href="mailto:vidhyarthikrishna@gmail.com">vidhyarthikrishna@gmail.com</a></p>
-            <p>GitHub: <a href="https://github.com/KrishnaVidhyarthii">@KrishnaVidhyarthi</a></p>
+
+            <p>
+                Email:
+                <a href="mailto:vidhyarthikrishna@gmail.com">
+                    vidhyarthikrishna@gmail.com
+                </a>
+            </p>
+
+            <p>
+                GitHub:
+                <a href="https://github.com/KrishnaVidhyarthii"
+                   target="_blank">
+                    @KrishnaVidhyarthi
+                </a>
+            </p>
+
         </div>
 
         <div class="card">
-        <img src = "https://i.pinimg.com/736x/86/16/08/8616086588c35dd6fd22f739879ad62f.jpg" alt="Blahaj">
+
+            <img src="https://i.pinimg.com/736x/86/16/08/8616086588c35dd6fd22f739879ad62f.jpg"
+                 alt="Blahaj">
+
             <h2>Koushik Sanapala</h2>
+
             <p>Developer | Professional bug fixer (hopefully)</p>
-            <p>Email: <a href="mailto:Koushiksk2007@gmail.com">Koushiksk2007@gmail.com</a></p>
-            <p>GitHub: <a href="https://github.com/koushiksk2007-creator">@koushiksk2007-creator</a></p>
+
+            <p>
+                Email:
+                <a href="mailto:Koushiksk2007@gmail.com">
+                    Koushiksk2007@gmail.com
+                </a>
+            </p>
+
+            <p>
+                GitHub:
+                <a href="https://github.com/koushiksk2007-creator"
+                   target="_blank">
+                    @koushiksk2007-creator
+                </a>
+            </p>
+
         </div>
 
     </div>
 
-    <p>Feel free to contact us. We may reply before the next semester.</p>
-    <p>🦈 Blåhaj approved. Human interaction not guaranteed.</p>
+    <p class="message">
+        Feel free to contact us. We may reply before the next semester.
+    </p>
 
-    <a href="index.html">Back to Home</a>
+    <p class="message">
+        🦈 Blåhaj approved. Human interaction not guaranteed.
+    </p>
+
+    <footer>
+        <strong>BLAHAJ NEWS</strong>
+
+        <p>Reporting absolutely nothing useful since 2026.</p>
+        <p>All news is 100% questionable and 200% shark-approved.</p>
+
+        <p>&copy; 2026 P7 News. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
