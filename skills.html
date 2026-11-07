@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Skills</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            padding: 30px 8%;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #1e293b, #312e81);
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        header img {
+            width: 100%;
+            max-width: 600px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            color: #a5b4fc;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #cbd5e1;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #a5b4fc;
+            margin-bottom: 18px;
+            border-left: 4px solid #818cf8;
+            padding-left: 12px;
+        }
+
+        .intro, .note {
+            background: #1e293b;
+            padding: 22px;
+            border-radius: 10px;
+            line-height: 1.8;
+        }
+
+        .skill-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-card {
+            background: #1e293b;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            border: 1px solid #334155;
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            border-color: #818cf8;
+        }
+
+        .skill-card img {
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .skill-card p {
+            font-weight: bold;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tags span {
+            background: #312e81;
+            color: #c7d2fe;
+            padding: 10px 16px;
+            border-radius: 20px;
+        }
+
+        .members {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        .member {
+            background: #1e293b;
+            padding: 22px;
+            border-radius: 10px;
+            border: 1px solid #334155;
+            line-height: 1.8;
+        }
+
+        .member h3 {
+            color: #a5b4fc;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 22px;
+            color: #94a3b8;
+            border-top: 1px solid #334155;
+        }
+
+        @media(max-width: 600px) {
+            body {
+                padding: 18px 5%;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1000"
+             alt="Our coding workspace">
+
+        <h1>What We Bring to the Table</h1>
+        <p>Two people, too many ideas, and occasionally working code.</p>
+    </header>
+
+    <section>
+        <h2>A Little About Us</h2>
+
+        <div class="intro">
+            We're a duo interested in programming, technology and
+            building cool stuff.
+
+            One of us is particularly interested in game development
+            and enjoys experimenting with different technologies.
+            The other is also into coding and is constantly picking
+            up new skills.
+
+            We don't know everything (yet), but Google, Stack Overflow
+            and debugging are always there for us.
+        </div>
+    </section>
+
+    <section>
+        <h2>Programming Languages</h2>
+
+        <div class="skill-grid">
+
+            <div class="skill-card">
+                <img src="https://skillicons.dev/icons?i=java" alt="Java">
+                <p>Java</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://skillicons.dev/icons?i=python" alt="Python">
+                <p>Python</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://skillicons.dev/icons?i=cpp" alt="C++">
+                <p>C++</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://skillicons.dev/icons?i=rust" alt="Rust">
+                <p>Rust</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://skillicons.dev/icons?i=cs" alt="C#">
+                <p>C#</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>Web Development</h2>
+
+        <div class="skill-grid">
+
+            <div class="skill-card">
+                <img src="https://skillicons.dev/icons?i=html" alt="HTML">
+                <p>HTML</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://skillicons.dev/icons?i=css" alt="CSS">
+                <p>CSS</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://skillicons.dev/icons?i=js" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://skillicons.dev/icons?i=react" alt="React">
+                <p>React</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>Tools We Use</h2>
+
+        <div class="skill-grid">
+
+            <div class="skill-card">
+                <img src="https://skillicons.dev/icons?i=git" alt="Git">
+                <p>Git</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://skillicons.dev/icons?i=github" alt="GitHub">
+                <p>GitHub</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://skillicons.dev/icons?i=vscode" alt="VS Code">
+                <p>VS Code</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://skillicons.dev/icons?i=idea" alt="IntelliJ">
+                <p>IntelliJ IDEA</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>Things We Like Working On</h2>
+
+        <div class="tags">
+            <span>Game Development</span>
+            <span>Web Development</span>
+            <span>Data Structures</span>
+            <span>Algorithms</span>
+            <span>Recursion</span>
+            <span>Sorting</span>
+            <span>Debugging</span>
+            <span>Problem Solving</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Our Other Skills</h2>
+
+        <div class="tags">
+            <span>Teamwork</span>
+            <span>Communication</span>
+            <span>Creative Thinking</span>
+            <span>Adaptability</span>
+            <span>Learning Quickly</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Who's Doing What?</h2>
+
+        <div class="members">
+
+            <div class="member">
+                <h3>Krishna Vidhyarthi – Team Lead</h3>
+                <p>
+                    Interested in game development, programming
+                    and exploring different technologies.
+                    Usually the one experimenting with new ideas
+                    and trying to figure out why the code isn't working.
+                </p>
+            </div>
+
+            <div class="member">
+                <h3>Koushik Sanapala – Developer</h3>
+                <p>
+                    Interested in programming and web development.
+                    Has experience with some of the technologies
+                    listed here and is working on learning more
+                    and improving coding skills.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="note">
+            <h2>Currently Working On</h2>
+            <p>→ Getting better at programming.</p>
+            <p>→ Learning more about web development.</p>
+            <p>→ Exploring game development.</p>
+            <p>→ Improving our Git and GitHub skills.</p>
+            <p>→ Writing code that works on the first try (hopefully).</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made by two students who like coding (most of the time).</p>
+    </footer>
+
+</body>
+</html>
