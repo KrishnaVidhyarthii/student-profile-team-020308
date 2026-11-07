@@ -11,6 +11,7 @@ This is our Web Development Lab project where we are learning to use Git and Git
 ## Technologies Used
 - HTML
 - CSS
+- JSS
 - Git
 - GitHub
 
