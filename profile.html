@@ -1,46 +1,66 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Students Profile</title>
+
     <style>
-        :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --text-main: #f8fafc;
-            --text-muted: #94a3b8;
-            --accent-leader: #38bdf8;
-            --accent-member: #4ade80;
-            --shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-            --border-color: #334155;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
+            background: #101010;
+            color: #eeeeee;
             line-height: 1.6;
-            margin: 0;
-            padding: 40px 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            padding: 30px 20px;
+        }
+
+        nav {
+            background: #080808;
+            padding: 16px;
+            text-align: center;
+            border-bottom: 1px solid #333;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            margin-bottom: 35px;
+        }
+
+        nav a {
+            color: #ddd;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #e63946;
         }
 
         .container {
             max-width: 900px;
             width: 100%;
+            margin: auto;
         }
 
         h1 {
             text-align: center;
             font-size: 2.5rem;
             margin-bottom: 10px;
-            color: #f1f5f9;
+            color: #e63946;
         }
 
         .subtitle {
             text-align: center;
             font-size: 1.2rem;
-            color: var(--text-muted);
+            color: #999;
             margin-bottom: 40px;
             font-weight: 400;
         }
@@ -52,30 +72,28 @@
         }
 
         .profile-card {
-            background: var(--card-bg);
-            border-radius: 12px;
+            background: #1b1b1b;
+            border-radius: 10px;
             padding: 30px;
-            box-shadow: var(--shadow);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
             display: flex;
             gap: 30px;
             align-items: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            position: relative;
-            overflow: hidden;
-            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            border: 1px solid #333;
         }
 
         .profile-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+            border-color: #e63946;
         }
 
         .profile-card.leader {
-            border-left: 6px solid var(--accent-leader);
+            border-left: 6px solid #e63946;
         }
 
         .profile-card.member {
-            border-left: 6px solid var(--accent-member);
+            border-left: 6px solid #8b0000;
         }
 
         .profile-pic {
@@ -83,7 +101,7 @@
             height: 160px;
             object-fit: cover;
             border-radius: 50%;
-            border: 3px solid var(--border-color);
+            border: 3px solid #8b0000;
             flex-shrink: 0;
         }
 
@@ -103,24 +121,24 @@
         }
 
         .leader .role-tag {
-            background-color: rgba(56, 189, 248, 0.15);
-            color: var(--accent-leader);
+            background: #390b0e;
+            color: #ff6b75;
         }
 
         .member .role-tag {
-            background-color: rgba(74, 222, 128, 0.15);
-            color: var(--accent-member);
+            background: #4a1115;
+            color: #ff9ca3;
         }
 
         .name {
             font-size: 1.5rem;
             margin: 0 0 5px 0;
-            color: #f1f5f9;
+            color: #e63946;
         }
 
         .meta-data {
             font-size: 0.9rem;
-            color: var(--text-muted);
+            color: #999;
             margin-bottom: 15px;
             font-weight: 500;
         }
@@ -130,70 +148,138 @@
         }
 
         .meta-data strong {
-            color: #cbd5e1;
+            color: #ddd;
         }
 
         .bio {
             font-size: 0.95rem;
             margin: 0;
-            color: #cbd5e1;
+            color: #ccc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 22px;
+            color: #777;
+            border-top: 1px solid #8b0000;
+            margin-top: 40px;
         }
 
         @media (max-width: 650px) {
+            body {
+                padding: 15px;
+            }
+
             .profile-card {
                 flex-direction: column;
                 text-align: center;
                 padding: 25px;
             }
-            
+
             .meta-data {
                 display: flex;
                 flex-direction: column;
                 gap: 5px;
             }
-            
+
             .meta-data span {
                 margin-right: 0;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 7px 10px;
+            }
+
+            h1 {
+                font-size: 2rem;
             }
         }
     </style>
 </head>
+
 <body>
 
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="profile.html">Profile</a> |
+        <a href="skills.html">Skills</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+
     <div class="container">
+
         <h1>Members Profile</h1>
         <p class="subtitle">About Us</p>
 
         <div class="profile-grid">
-            
+
             <div class="profile-card leader">
-                <img src="https://i.pinimg.com/736x/09/47/24/0947248aca53e5fed81043f21bb6a8cb.jpg" alt="Krishna Vidhyarthi" class="profile-pic">
+
+                <img src="https://i.pinimg.com/736x/09/47/24/0947248aca53e5fed81043f21bb6a8cb.jpg"
+                     alt="Krishna Vidhyarthi"
+                     class="profile-pic">
+
                 <div class="profile-info">
+
                     <span class="role-tag">Leader</span>
+
                     <h2 class="name">Krishna Vidhyarthi</h2>
+
                     <div class="meta-data">
                         <span><strong>Dept:</strong> B.Tech CSE-AI/ML</span>
                         <span><strong>College:</strong> BST-SVYASA</span>
                     </div>
-                    <p class="bio">Hi, I am a student who is equally obsessed with beating high scores and building the code behind them. Also interested in learning system development/design and sleeping.</p>
+
+                    <p class="bio">
+                        Hi, I am a student who is equally obsessed with
+                        beating high scores and building the code behind
+                        them. Also interested in learning system
+                        development/design and sleeping.
+                    </p>
+
                 </div>
             </div>
 
             <div class="profile-card member">
-                <img src="https://i.pinimg.com/1200x/f4/d3/6a/f4d36a253f7d013154c6c3d2b13d4c1e.jpg" alt="Kaushik Sanapala" class="profile-pic">
+
+                <img src="https://i.pinimg.com/1200x/f4/d3/6a/f4d36a253f7d013154c6c3d2b13d4c1e.jpg"
+                     alt="Kaushik Sanapala"
+                     class="profile-pic">
+
                 <div class="profile-info">
+
                     <span class="role-tag">Co-Lead / Member</span>
+
                     <h2 class="name">Kaushik Sanapala</h2>
+
                     <div class="meta-data">
                         <span><strong>Dept:</strong> B.Tech CSE-AI/ML</span>
                         <span><strong>College:</strong> BST-SVYASA</span>
                     </div>
-                    <p class="bio">Hi, I am someone who is passionate about technology, programming, and exploring the world of computer science. I enjoy learning new skills, experimenting with web development, and understanding how things work behind the code. Always curious about new ideas, interested in system design and development, and constantly working towards becoming a better version of myself. Also a big believer in dreaming big, coding hard, and occasionally overthinking everything.</p>
+
+                    <p class="bio">
+                        Hi, I am someone who is passionate about technology,
+                        programming, and exploring the world of computer
+                        science. I enjoy learning new skills, experimenting
+                        with web development, and understanding how things
+                        work behind the code. Always curious about new ideas,
+                        interested in system design and development, and
+                        constantly working towards becoming a better version
+                        of myself. Also a big believer in dreaming big,
+                        coding hard, and occasionally overthinking everything.
+                    </p>
+
                 </div>
             </div>
 
         </div>
+
     </div>
+
+    <footer>
+        <p>Made by two students who like coding (most of the time).</p>
+    </footer>
 
 </body>
 </html>
