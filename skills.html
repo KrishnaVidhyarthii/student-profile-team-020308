@@ -1,7 +1,8 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Skills</title>
 
     <style>
@@ -13,17 +14,18 @@
 
         body {
             font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: #e2e8f0;
-            padding: 30px 8%;
+            background: #101010;
+            color: #eeeeee;
+            padding: 20px 8%;
         }
 
         header {
             text-align: center;
             padding: 40px 20px;
-            background: linear-gradient(135deg, #1e293b, #312e81);
-            border-radius: 15px;
-            margin-bottom: 30px;
+            background: #181818;
+            border-bottom: 4px solid #8b0000;
+            border-radius: 8px;
+            margin-bottom: 20px;
         }
 
         header img {
@@ -31,18 +33,42 @@
             max-width: 600px;
             height: 180px;
             object-fit: cover;
-            border-radius: 10px;
+            border-radius: 8px;
             margin-bottom: 20px;
         }
 
         header h1 {
             font-size: 36px;
-            color: #a5b4fc;
+            color: #e63946;
             margin-bottom: 10px;
         }
 
         header p {
-            color: #cbd5e1;
+            color: #aaa;
+        }
+
+        nav {
+            background: #080808;
+            padding: 16px;
+            text-align: center;
+            border-bottom: 1px solid #333;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            color: #ddd;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #e63946;
         }
 
         section {
@@ -50,16 +76,17 @@
         }
 
         h2 {
-            color: #a5b4fc;
+            color: #e63946;
             margin-bottom: 18px;
-            border-left: 4px solid #818cf8;
+            border-left: 4px solid #8b0000;
             padding-left: 12px;
         }
 
         .intro, .note {
-            background: #1e293b;
+            background: #1b1b1b;
             padding: 22px;
-            border-radius: 10px;
+            border-radius: 8px;
+            border: 1px solid #333;
             line-height: 1.8;
         }
 
@@ -70,17 +97,17 @@
         }
 
         .skill-card {
-            background: #1e293b;
+            background: #1b1b1b;
             padding: 20px;
             text-align: center;
-            border-radius: 10px;
-            border: 1px solid #334155;
+            border-radius: 8px;
+            border: 1px solid #333;
             transition: 0.3s;
         }
 
         .skill-card:hover {
             transform: translateY(-5px);
-            border-color: #818cf8;
+            border-color: #e63946;
         }
 
         .skill-card img {
@@ -101,10 +128,11 @@
         }
 
         .tags span {
-            background: #312e81;
-            color: #c7d2fe;
+            background: #390b0e;
+            color: #ffb3b8;
             padding: 10px 16px;
             border-radius: 20px;
+            border: 1px solid #702027;
         }
 
         .members {
@@ -114,32 +142,39 @@
         }
 
         .member {
-            background: #1e293b;
+            background: #1b1b1b;
             padding: 22px;
-            border-radius: 10px;
-            border: 1px solid #334155;
+            border-radius: 8px;
+            border: 1px solid #333;
+            border-left: 4px solid #8b0000;
             line-height: 1.8;
         }
 
         .member h3 {
-            color: #a5b4fc;
+            color: #e63946;
             margin-bottom: 10px;
         }
 
         footer {
             text-align: center;
             padding: 22px;
-            color: #94a3b8;
-            border-top: 1px solid #334155;
+            color: #888;
+            border-top: 1px solid #8b0000;
+            margin-top: 30px;
         }
 
         @media(max-width: 600px) {
             body {
-                padding: 18px 5%;
+                padding: 15px 5%;
             }
 
             header h1 {
                 font-size: 28px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 7px 10px;
             }
         }
     </style>
@@ -154,6 +189,13 @@
         <h1>What We Bring to the Table</h1>
         <p>Two people, too many ideas, and occasionally working code.</p>
     </header>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="profile.html">Profile</a> |
+        <a href="skills.html">Skills</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
 
     <section>
         <h2>A Little About Us</h2>
