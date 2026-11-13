@@ -22,6 +22,7 @@ This is our Web Development Lab project where we are learning to use Git and Git
 ## Team Members
 - Student 1 – Team Lead - Krishna Vidhyarthi - USN:245
 - Student 2 – Co Lead/Member - Koushik Sanapala - USN:265
+- Student 3 - Member - Harshit Kumar - USN:139
 
 ## What we learned
 - Creating repositories
